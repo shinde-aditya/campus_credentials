@@ -55,11 +55,56 @@
 # print(lcm)
 
 
-num1=int(input("First no:"))
-num2=int(input("second no:"))
-hcm=1
+# num1=int(input("First no:"))
+# num2=int(input("second no:"))
+# hcm=1
 
-for i in range(1,min(num1,num2)):
-    if(num1%i==0 and num2%i==0):
-        hcf=i
-print(hcf)
+# for i in range(1,min(num1,num2)):
+#     if(num1%i==0 and num2%i==0):
+#         hcf=i
+# print(hcf)
+
+
+#armstrong number
+
+num = int(input("Enter a number: "))
+
+# initialize sum
+# sum = 0
+
+# # find the sum of the cube of each digit
+# temp = num
+# while temp > 0:
+#    digit = temp % 10
+#    sum += digit ** 3
+#    temp //= 10
+
+# # display the result
+# if num == sum:
+#    print(num,"is an Armstrong number")
+# else:
+#    print(num,"is not an Armstrong number")
+
+
+#prime number
+num = 407
+
+# To take input from the user
+#num = int(input("Enter a number: "))
+
+if num == 0 or num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
